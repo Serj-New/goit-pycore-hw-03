@@ -8,7 +8,6 @@ def get_upcoming_birthdays(users: list) -> list:
         name = user["name"]
         birthday = datetime.strptime(user["birthday"], "%Y.%m.%d").date()
         
-
         birthday_this_year = birthday.replace(year=today.year)
 
         if birthday_this_year < today:
